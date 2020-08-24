@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true,
+    "options": {}
+  },
+  "teams": {
+    "dataSource": "db",
+    "public": true
+  },
+  "playerInfo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tournaments": {
+    "dataSource": "db",
+    "public": true
+  },
+  "registeredTeams": {
+    "dataSource": "db",
+    "public": true
+  },
+  "registeredTournaOfTeams": {
+    "dataSource": "db",
+    "public": true
+  },
+  "partner": {
+    "dataSource": "db",
+    "public": true
+  },
+  "query": {
+    "dataSource": "db",
+    "public": true
+  }
+}

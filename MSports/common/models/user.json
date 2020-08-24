@@ -1,0 +1,42 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "restrictResetPasswordTokenScope": true,
+  "emailVerificationRequired": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "userInfos": {
+      "type": "hasOne",
+      "model": "userInfo",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "teams": {
+      "type": "hasMany",
+      "model": "teams",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "WRITE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

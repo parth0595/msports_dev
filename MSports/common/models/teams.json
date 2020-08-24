@@ -1,0 +1,30 @@
+{
+  "name": "teams",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "playerInfos": {
+      "type": "hasAndBelongsToMany",
+      "model": "playerInfo",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "registeredTournaOfTeams": {
+      "type": "hasMany",
+      "model": "registeredTournaOfTeams",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

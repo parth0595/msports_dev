@@ -1,0 +1,23 @@
+{
+  "name": "query",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "query": {
+      "type": "string"
+    },
+    "mobileno": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

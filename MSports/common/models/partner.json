@@ -1,0 +1,51 @@
+{
+  "name": "partner",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "members": {
+      "type": "string",
+      "required": false
+    },
+    "vision": {
+      "type": "string",
+      "required": true
+    },
+    "ytLink": {
+      "type": "string",
+      "required": false
+    },
+    "discordLink": {
+      "type": "string",
+      "required": false
+    },
+    "instLink": {
+      "type": "string",
+      "required": false
+    },
+    "fbLink": {
+      "type": "string",
+      "required": false
+    },
+    "rules": {
+      "type": "string"
+    },
+	"div1": {
+      "type": "string"
+    },
+	"div2": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

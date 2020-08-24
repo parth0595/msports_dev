@@ -1,0 +1,38 @@
+{
+  "name": "tournaments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "organiser": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "string"
+    },
+    "prize": {
+      "type": "string"
+    },
+	"registerLink": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "registeredTeams": {
+      "type": "hasMany",
+      "model": "registeredTeams",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

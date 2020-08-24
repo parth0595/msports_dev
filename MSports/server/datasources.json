@@ -1,0 +1,43 @@
+{
+  "mongodb": {
+    "url": "mongodb://admin:system123@ds141766.mlab.com:41766/msports",
+    "name": "mongodb",
+    "connector": "mongodb"
+  },
+  "db1": {
+    "name": "db1",
+    "connector": "memory"
+  },
+  "db": {
+  "name": "db",
+  "host": "127.0.0.1",
+            "database": "msports",
+            "username": "msportsAdmin",
+            "password": "msportsAdmin123",
+            "port": 27017,
+    "connector": "mongodb"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "msports.pubgm@gmail.com",
+          "pass": "system123#"
+        }
+      }
+    ]
+  },
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  }
+}
